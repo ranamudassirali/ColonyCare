@@ -61,7 +61,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         val viewModel= MainViewModel()
 
-
+        findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener(){
+            startActivity(Intent(this,AddServiceActivity::class.java))
+        }
 
         lifecycleScope.launch {
             viewModel.isSucessfullySaved.collect{

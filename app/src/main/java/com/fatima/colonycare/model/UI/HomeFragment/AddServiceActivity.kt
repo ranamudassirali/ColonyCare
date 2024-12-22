@@ -70,26 +70,26 @@ class AddServiceActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            val price = serviceprice.toIntOrNull()
-
-            if (price == null) {
-                Toast.makeText(this, "Please enter a valid price", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
+            val price = 300;
+//
+//            if (price == null) {
+//                Toast.makeText(this, "Please enter a valid price", Toast.LENGTH_SHORT).show()
+//                return@setOnClickListener
+//            }
 
 
 
             val service= ServicesModelClass()
             service.ServiceName=servicename
             service.ServiceDescription=servicedescription
-            service.ServicePrice=price
+            service.ServicePrice=price!!
             service.ServiceProviderName=serviceprovidername
             service.ServiceRole=serviceproviderrole
 
             if (uri == null)
                 viewModel.addServices(service)
             else
-                  viewModel.uploadImageAndSaveServices(getRealPathFromURI(uri!!)!!, service)
+                viewModel.uploadImageAndSaveServices(getRealPathFromURI(uri!!)!!, service)
 
             // Save the service object (this would be a database operation, Firestore, etc.)
             // For now, just display the success message
