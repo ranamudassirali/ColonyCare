@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "107774468476",
+    "project_id": "colonycareservices-7da5a",
+    "storage_bucket": "colonycareservices-7da5a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107774468476:android:5610db466f642107fc04f9",
+        "android_client_info": {
+          "package_name": "com.fatima.colonycare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOZtAGWLT4ri5sc0zpdrT-wQ9TNIT-uNs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

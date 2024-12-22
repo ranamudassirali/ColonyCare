@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/donate_navigation"
+    app:startDestination="@id/services">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.fatima.colonycare.model.UI.Fragments.HomeFragment"
+        android:label="Donars" />
+
+    <fragment
+        android:id="@+id/services"
+        android:name="com.fatima.colonycare.model.UI.Fragments.CategoriesFragment"
+        android:label="ServicesFragment" />
+
+    <fragment
+        android:id="@+id/completedonation"
+        android:name="com.fatima.colonycare.model.UI.Fragments.CompletedFragment"
+        android:label="Completed" />
+</navigation>
